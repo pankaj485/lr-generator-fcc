@@ -1,7 +1,7 @@
 import React, { useImperativeHandle, useState } from "react";
 import data from "./data";
 function App() {
-	const [count, setCount] = useState(5);
+	const [count, setCount] = useState();
 	const [text, setText] = useState([]);
 
 	const newArray = [];
@@ -10,20 +10,14 @@ function App() {
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		for (let i = 0; i < count; i++) {
+		let amount = parseInt(count);
+		if (count <= 0 || count == undefined) {
+			amount = 1;
+		}
+		for (let i = 0; i < amount; i++) {
 			newArray.push(dummyText);
 		}
 		setText(newArray);
-
-		// let amount = parseInt(count);
-		// if (count <= 0) {
-		// 	amount = 1;
-		// }
-		// if (count > 8) {
-		// 	amount = 8;
-		// }
-		// console.log(newArray[1].props.children);
-		// setText(data.slice(0, amount));
 	};
 
 	return (
