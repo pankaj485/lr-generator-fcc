@@ -1,7 +1,7 @@
 # Lorem-Ipsum generator
 
 
-vist site from here: https://pank-lr-generate.netlify.app/
+vist site  [here](https://pank-lr-generate.netlify.app/)
 
 This is 8th project from "Code 15 React Projects by Coding Addict "
 
