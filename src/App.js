@@ -17,6 +17,7 @@ function App() {
 		for (let i = 0; i < amount; i++) {
 			newArray.push(dummyText);
 		}
+		setCount("0");
 		setText(newArray);
 	};
 
