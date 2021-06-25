@@ -1,5 +1,4 @@
 import React, { useImperativeHandle, useState } from "react";
-import data from "./data";
 function App() {
 	const [count, setCount] = useState();
 	const [text, setText] = useState([]);
